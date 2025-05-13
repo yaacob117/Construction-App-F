@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:bg-blue-600 disabled:bg-gray-400 disabled:cursor-not-allowed;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-accent transition-colors duration-300;
+  }
+
+  .section-card {
+    @apply bg-white p-6 rounded-lg shadow-md mb-6;
+  }
+
+  .section-title {
+    @apply text-xl font-semibold text-primary mb-4 pb-2 border-b-2 border-accent;
+  }
+
+  .info-label {
+    @apply text-sm text-secondary font-medium;
+  }
+
+  .info-value {
+    @apply text-lg text-gray-800;
+  }
+
+  .status-badge {
+    @apply px-4 py-2 rounded-full text-sm font-semibold text-white text-center min-w-[150px];
+  }
+}
